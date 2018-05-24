@@ -1,0 +1,39 @@
+{
+    "name": "bantenprov/pendaftaran-siswa",
+    "description": "PendaftaranSiswa",
+    "authors": [
+        {
+            "name": "bantenprov",
+            "email": "developer.bantenprov@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "support": {
+      "source": "https://github.com/bantenprov/pendaftaran-siswa,",
+      "issues": "https://github.com/bantenprov/pendaftaran-siswa/issues",
+      "wiki": "https://github.com/bantenprov/pendaftaran-siswa/wiki"
+    },
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "5.5.*"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers/helpers.php"
+        ],
+        "psr-4": {
+            "Bantenprov\\PendaftaranSiswa\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bantenprov\\PendaftaranSiswa\\PendaftaranSiswaServiceProvider"
+            ],
+            "aliases": {                
+                "PendaftaranSiswa": "Bantenprov\\PendaftaranSiswa\\Facades\\PendaftaranSiswa"
+            }
+        }
+    }
+}
